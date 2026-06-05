@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+font-family: 'Baloo 2', cursive;
+   font-weight: 700;
+   font-size: 2rem;
+
+  background: linear-gradient(
+    135deg,
+    #9b5de5 0%,
+    #f15bb5 35%,
+    #00bbf9 70%,
+    #00f5d4 100%
+  );
+}
+
+h1{
+  margin: 1rem;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(300px, 65vmin, 1000px);
+  background-color: #fee440ff;
+  border: none;
+  border-radius: 14%;
+padding: 5%; 
+padding-top: 2rem;
+}
+
+
+.display {
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+  margin-top: 0;
+}
+.left,
+.right{
+   display: flex;
+  flex-direction: row;
+    align-items: center;
+
+}
+.btn-wrap {
+  display: flex;
+  gap: 1rem;
+  width: 120%;
+  justify-content: space-evenly;
+}
+
+.act-btn {
+  background-color: rgba(0, 187, 250, 0.85);
+  border: none;
+  border-radius: 15%;
+  width: 25%;
+  aspect-ratio: 1;
+}
+.app-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.act-img {
+  width: clamp(75%, 80%, 90%);
+}
+
+.stats{
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 7%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.reset-btn{
+  background-color:#f15bb5;
+  border: none;
+  border-radius: 10%;
+   padding: 0.5rem 1rem;
+   font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reset-btn:hover{
+  border: 0.1rem solid #00f5d4;
+
+}
+.reset-btn:active{
+    background-color:#c94c97;
+
+}
+
+.stat{
+  display: flex;
+  justify-content: space-evenly;
+    width: 100%;
+
+}

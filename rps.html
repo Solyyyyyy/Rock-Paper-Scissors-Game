@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="rock-paper-scissors.png" type="image/png" />
+  <link rel="stylesheet" href="rps.css" />
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="square">
+    <div class="display">
+      <div class="left">
+        <p id="name">you</p>
+        <p id="you"></p>
+      </div>
+
+      <div class="right">
+        <p id="cpt"></p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <div class="btn-wrap">
+      <button onclick="
+            const rndmNbr = Math.random();
+            let cptmv = ' ';
+            if (rndmNbr >= 0 && rndmNbr < 1 / 3) {
+              cptmv = 'rock';
+            } else if (rndmNbr >= 1 / 3 && rndmNbr < 2 / 3) {
+              cptmv = 'paper';
+            } else if (rndmNbr >= 2 / 3 && rndmNbr < 1) {
+              cptmv = 'scissors';
+            }
+            document.getElementById('cpt').value;
+
+            let result = ' ';
+            if (cptmv === 'rock') {
+              result = 'tie';
+              t++;
+              document.getElementById('ties').innerHTML = t;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'rock.png';
+              img.alt = 'rock';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'paper') {
+              result = 'you lose';
+              l++;
+              document.getElementById('loses').innerHTML = l;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'paper.png';
+              img.alt = 'paper';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'scissors') {
+              result = 'you win';
+              w++;
+              document.getElementById('wins').innerHTML = w;
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'scissors.png';
+              img.alt = 'scissors';
+              document.getElementById('cpt').appendChild(img);
+            }
+            document.getElementById('you').innerHTML = ' ';
+            const img = document.createElement('img');
+            img.classList.add('app-img');
+            img.src = 'rock.png';
+            img.alt = 'rock';
+            document.getElementById('you').appendChild(img);
+          " class="act-btn">
+        <img class="act-img" alt="rock" src="rock.png" />
+      </button>
+
+      <button onclick="
+            rndmNbr = Math.random();
+            cptmv = ' ';
+            if (rndmNbr >= 0 && rndmNbr < 1 / 3) {
+              cptmv = 'rock';
+            } else if (rndmNbr >= 1 / 3 && rndmNbr < 2 / 3) {
+              cptmv = 'paper';
+            } else if (rndmNbr >= 2 / 3 && rndmNbr < 1) {
+              cptmv = 'scissors';
+            }
+            result = ' ';
+            if (cptmv === 'rock') {
+              result = 'you win';
+              w++;
+              document.getElementById('wins').innerHTML = w;
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'rock.png';
+              img.alt = 'rock';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'paper') {
+              result = 'tie';
+              t++;
+              document.getElementById('ties').innerHTML = t;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'paper.png';
+              img.alt = 'paper';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'scissors') {
+              result = 'you lose';
+              l++;
+              document.getElementById('loses').innerHTML = l;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'scissors.png';
+              img.alt = 'scissors';
+              document.getElementById('cpt').appendChild(img);
+            }
+            document.getElementById('you').innerHTML = ' ';
+
+            const img = document.createElement('img');
+            img.classList.add('app-img');
+            img.src = 'paper.png';
+            img.alt = 'paper';
+            document.getElementById('you').appendChild(img);
+          " class="act-btn">
+        <img class="act-img" alt="paper" src="paper.png" />
+      </button>
+
+      <button onclick="
+            rndmNbr = Math.random();
+            cptmv = ' ';
+            if (rndmNbr >= 0 && rndmNbr < 1 / 3) {
+              cptmv = 'rock';
+            } else if (rndmNbr >= 1 / 3 && rndmNbr < 2 / 3) {
+              cptmv = 'paper';
+            } else if (rndmNbr >= 2 / 3 && rndmNbr < 1) {
+              cptmv = 'scissors';
+            }
+            result = ' ';
+            if (cptmv === 'rock') {
+              result = 'you lose';
+              l++;
+              document.getElementById('loses').innerHTML = l;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'rock.png';
+              img.alt = 'rock';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'paper') {
+              result = 'you win';
+              w++;
+              document.getElementById('wins').innerHTML = w;
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'paper.png';
+              img.alt = 'paper';
+              document.getElementById('cpt').appendChild(img);
+            } else if (cptmv === 'scissors') {
+              result = 'tie';
+              t++;
+              document.getElementById('ties').innerHTML = t;
+
+              document.getElementById('cpt').innerHTML = ' ';
+
+              const img = document.createElement('img');
+              img.classList.add('app-img');
+              img.src = 'scissors.png';
+              img.alt = 'scissors';
+              document.getElementById('cpt').appendChild(img);
+            }
+            document.getElementById('you').innerHTML = ' ';
+
+            const img = document.createElement('img');
+            img.classList.add('app-img');
+            img.src = 'scissors.png';
+            img.alt = 'scissors';
+            document.getElementById('you').appendChild(img);
+          " class="act-btn">
+        <img class="act-img" alt="scissors" src="scissors.png" />
+      </button>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <p>Wins:</p>
+        <p id="wins">0</p>
+      </div>
+      <div class="stat">
+        <p>Loses:</p>
+        <p id="loses">0</p>
+      </div>
+      <div class="stat">
+        <p>Ties:</p>
+        <p id="ties">0</p>
+      </div>
+      <div>
+        <button class="reset-btn" onclick="
+              w = 0;
+              l = 0;
+              t = 0;
+              document.getElementById('wins').innerHTML = w;
+              document.getElementById('ties').innerHTML = t;
+              document.getElementById('loses').innerHTML = l;
+              document.getElementById('cpt').innerHTML = ' ';
+              document.getElementById('you').innerHTML = ' ';
+            ">
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  let name = prompt("enter your name: ");
+  if (!name)
+    name = 'you';
+  document.getElementById('name').innerHTML = name;
+
+
+
+
+  let w = 0;
+  let l = 0;
+  let t = 0;
+
+</script>
+
+</html>
